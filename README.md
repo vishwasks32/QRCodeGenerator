@@ -1,32 +1,22 @@
 # QR Code Generator
 
-Install the package once using the Python interpreter that will launch it:
+## Install
 
-```text
-python -m pip install .
-```
+Use the standard installer for your operating system:
 
-On Linux, use `python3 -m pip install .` instead and ensure Tkinter is installed.
+- **Windows:** Run `QR-Code-Generator-Setup.exe`. It adds the app to the Start
+  menu and offers an optional desktop shortcut. To remove it, use **Settings >
+  Apps > Installed apps > QR Code Generator > Uninstall**.
+- **Debian or Ubuntu:** Open the `.deb` installer in the Software app. To
+  remove the app, use the Software app's installed-apps list.
 
-Then launch the graphical interface by double-clicking:
+The Windows setup executable and Debian/Ubuntu package are built by the
+**Build Installers** GitHub Actions workflow. Download them from that
+workflow's artifacts.
 
-- **Windows:** `Launch QR Generator.pyw`. The `.pyw` file association must
-  point to the Python installation with the package dependencies.
-- **Linux:** `QR Code Generator.desktop`. The desktop entry and application
-  icon are installed under the Python installation's data directory. The
-  `python3` on your PATH must be the interpreter where you installed the
-  package. Mark the desktop file executable and allow launching it if your
-  desktop environment requires it.
-
-The installed commands `qr-generator-ui` and `qr-generator` remain available
-for launching the GUI and CLI, respectively. Alternatively, run the CLI with:
-
-```powershell
-qr-generator
-```
-
-The original `python qr_generator_ui.py` and `python qr_generator.py` commands
-also work from the project directory.
+For development, the installed commands `qr-generator-ui` and `qr-generator`
+launch the GUI and CLI. The original `python qr_generator_ui.py` and
+`python qr_generator.py` commands also work from the project directory.
 
 The application code is in `qr_code_generator/`. Enter a filename in the GUI or
 CLI; generated QR codes are saved in `QRCodeGenerator/outputs/` under your home

@@ -10,6 +10,9 @@ readme = "README.md"
 requires-python = ">=3.9"
 dependencies = ["qrcode[pil]"]
 
+[project.optional-dependencies]
+installer = ["pyinstaller>=6"]
+
 [project.scripts]
 qr-generator = "qr_code_generator.generator:main"
 qr-generator-ui = "qr_code_generator.launcher:main"
