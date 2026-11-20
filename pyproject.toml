@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qr-code-generator-app"
+version = "0.1.0"
+description = "Generate QR codes using a graphical or command-line interface."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["qrcode[pil]"]
+
+[project.scripts]
+qr-generator = "qr_code_generator.generator:main"
+qr-generator-ui = "qr_code_generator.ui:main"
+
+[tool.setuptools.packages.find]
+include = ["qr_code_generator*"]
