@@ -12,9 +12,11 @@ Then launch the graphical interface by double-clicking:
 
 - **Windows:** `Launch QR Generator.pyw`. The `.pyw` file association must
   point to the Python installation with the package dependencies.
-- **Linux:** `QR Code Generator.desktop`. The `python3` on your PATH must be the
-  interpreter where you installed the package. Mark the file executable and
-  allow launching it if your desktop environment requires it.
+- **Linux:** `QR Code Generator.desktop`. The desktop entry and application
+  icon are installed under the Python installation's data directory. The
+  `python3` on your PATH must be the interpreter where you installed the
+  package. Mark the desktop file executable and allow launching it if your
+  desktop environment requires it.
 
 The installed commands `qr-generator-ui` and `qr-generator` remain available
 for launching the GUI and CLI, respectively. Alternatively, run the CLI with:

@@ -16,3 +16,7 @@ qr-generator-ui = "qr_code_generator.launcher:main"
 
 [tool.setuptools.packages.find]
 include = ["qr_code_generator*"]
+
+[tool.setuptools.data-files]
+"share/applications" = ["QR Code Generator.desktop"]
+"share/pixmaps" = ["qr_code_generator/assets/qr_gen_icon.png"]
