@@ -1,18 +1,23 @@
 # QR Code Generator
 
-Install the package:
+Install the package once using the Python interpreter that will launch it:
 
-```powershell
+```text
 python -m pip install .
 ```
 
-Start the graphical interface:
+On Linux, use `python3 -m pip install .` instead and ensure Tkinter is installed.
 
-```powershell
-qr-generator-ui
-```
+Then launch the graphical interface by double-clicking:
 
-Alternatively, run the command-line interface:
+- **Windows:** `Launch QR Generator.pyw`. The `.pyw` file association must
+  point to the Python installation with the package dependencies.
+- **Linux:** `QR Code Generator.desktop`. The `python3` on your PATH must be the
+  interpreter where you installed the package. Mark the file executable and
+  allow launching it if your desktop environment requires it.
+
+The installed commands `qr-generator-ui` and `qr-generator` remain available
+for launching the GUI and CLI, respectively. Alternatively, run the CLI with:
 
 ```powershell
 qr-generator

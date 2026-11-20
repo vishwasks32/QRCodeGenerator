@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=QR Code Generator
+Comment=Generate and save QR codes
+Exec=python3 -m qr_code_generator.launcher
+Terminal=false
+Categories=Utility;
